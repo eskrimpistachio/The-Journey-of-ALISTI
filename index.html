@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Journey of ALISTI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="script.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              unguPrimary: "#D033B9",
+              unguSecondary: "#AB74F0",
+              birumuda: "#91AAFF",
+              birumuda2: "#25C6F1",
+              birutua: "#25C6F1",
+              coklat: "#FFCB9B", //54 persen opacity
+              kuning: "#FEE16B",
+              pink: "#F5B6EC",
+            },
+            fontFamily: {
+              poppins: ["Poppins"],
+            },
+            backgroundImage: {
+              "glass-bg": "url('./img/topbg.jpg')",
+              "liberty-bg": "url('./img/liberty.png')",
+              "madinah-bg": "url('./img/madinah.png')",
+              "khas" : "url('./img/background.png')"
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins bg-khas bg-contain">
+    <nav class="hidden md:flex flex-row py-4 justify-around bg-white shadow-xl">
+      <div class="flex flex-row gap-4 lg:gap-8 py-2">
+        <img class="lg:h-[40px]" src="img/instagram.png" alt="" />
+        <img class="lg:h-[40px]" src="img/youtube.png" alt="" />
+        <img class="lg:h-[40px]" src="img/twitter.png" alt="" />
+        <img class="hidden lg:flex lg:h-[40px]" src="img/linkedin.png" alt="" />
+        <img class="hidden lg:flex lg:h-[40px]" src="img/snapchat.png" alt="" />
+      </div>
+      <div class="py-2 gap-4 flex flex-row">
+        <form action="">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="SEARCH.."
+            class="rounded-lg py-1 mt-1 bg-gray-200 placeholder:text-black/80 text-center"
+          />
+        </form>
+        <div class="flex flex-row gap-8 lg:ml-32">
+          <img class="h-[35px]" src="img/message.png" alt="" />
+          <img class="h-[35px]" src="img/addfriend.png" alt="" />
+        </div>
+      </div>
+      <div class="mt-4 lg:hidden">
+        <img src="img/menu-black.png" alt="" />
+      </div>
+    </nav>
+      <div
+        class="bg-glass-bg bg-cover md:py-8 md:my-8 lg:mx-28 md:rounded-[30px] "
+      >
+        <div class="flex flex-row justify-end gap-2 p-4 md:hidden">
+          <img src="img/search.png" alt="missing img" />
+          <img src="img/menu.png" alt="missing img" />
+        </div>
+        <h1 class="mx-auto text-center text-4xl text-white font-bold py-4 ">
+          The Journey of ALISTI
+        </h1>
+      </div>
+      <nav class="hidden md:flex bg-[#D88DFB] md:mx-4 lg:mx-28 my-16">
+        <ul class="flex flex-row mx-auto gap-12 text-base lg:text-xl font-light">
+          <li class="bg-[#FFD0FA] p-6">HOME</li>
+          <li class="p-6">CONTENT</li>
+          <li class="p-6">THOUGHTS</li>
+          <li class="p-6">ABOUT ME</li>
+          <li class="p-6">HELP</li>
+        </ul>
+      </nav>
+      <section class="section1 mt-4 md:mt-0">
+        <div class="slideshow-container">
+          <article class="mySlides fade section-img">
+            <img src="img/ijenstreet.png" alt="missing img" />
+          </article>
+          <article class="mySlides fade">
+            <img src="img/kota.jpg" alt="missing img" />
+          </article>
+          <article class="mySlides fade">
+            <img src="img/pantai.jpg" alt="missing img" />
+          </article>
+          <a class="prev text-gray-300" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next text-gray-300" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <h1 class="text-4xl text-center font-bold my-4">A CUP OF MY TRAVEL</h1>
+      </section>
+      <div
+        class="flex flex-col lg:flex-row items-center justify-center gap-4 md:gap-16"
+      >
+        <div
+          class="shadow-xl flex flex-row w-[320px] h-[165px] rounded-[30px] bg-unguPrimary"
+        >
+          <div class="flex flex-row my-16 gap-6 mx-auto">
+            <img src="img/photo.png" alt="missing img" />
+            <h4 class="font-bold text-3xl">PHOTOGRAPHY</h4>
+          </div>
+        </div>
+        <div
+          class="shadow-xl flex flex-row w-[320px] h-[165px] rounded-[30px] bg-unguSecondary"
+        >
+          <div class="flex flex-row my-16 gap-6 mx-auto">
+            <img src="img/dailylife.png" alt="missing img" />
+            <h4 class="font-bold text-3xl">DAILY LIFE</h4>
+          </div>
+        </div>
+        <div
+          class="shadow-xl flex flex-row w-[320px] h-[165px] rounded-[30px] bg-birumuda"
+        >
+          <div class="flex flex-row my-16 gap-6 mx-auto">
+            <img src="img/dailylife.png" alt="missing img" />
+            <h4 class="font-bold text-3xl">VIDEOGRAPHY</h4>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row justify-center md:gap-16">
+        <div class="flex flex-col text-center my-8">
+          <h4 class="my-4 font-light text-2xl">INDONESIA</h4>
+          <div
+            class="bg-liberty-bg rounded-[30px] h-[250px] w-[320px] bg-cover mx-auto flex flex-row flex-wrap gap-4 p-8 text-lg underline justify-center"
+          >
+            <div class="bg-birutua/50 px-4 pt-3 rounded-[20px]">NTB</div>
+            <div class="bg-birutua/50 px-4 pt-3 rounded-[20px]">MALANG</div>
+            <div class="bg-birutua/50 px-4 pt-3 rounded-[20px]">SEMARANG</div>
+            <div class="bg-birutua/50 px-4 pt-3 rounded-[20px]">JAKARTA</div>
+            <div class="bg-birutua/50 px-4 pt-3 rounded-[20px]">BALI</div>
+          </div>
+        </div>
+        <div class="flex flex-col text-center my-8">
+          <h4 class="my-4 font-light text-2xl">WORLD</h4>
+          <div
+            class="bg-madinah-bg rounded-[30px] h-[250px] w-[320px] bg-cover mx-auto flex flex-row flex-wrap gap-4 p-8 text-lg underline justify-center"
+          >
+            <div class="bg-coklat/50 px-4 pt-3 rounded-[20px]">SINGAPORE</div>
+            <div class="bg-coklat/50 px-4 pt-3 rounded-[20px]">MALAYSIA</div>
+            <div class="bg-coklat/50 px-4 pt-3 rounded-[20px]">MAKKAH</div>
+            <div class="bg-coklat/50 px-4 pt-3 rounded-[20px]">MADINAH</div>
+          </div>
+        </div>
+      </div>
+      <h1 class="text-4xl mx-8 md:mx-0 text-center font-bold my-8">
+        ENDORSEMENT WITHOUT A DOUBT
+      </h1>
+      <div
+        class="flex flex-col gap-4 md:gap-8 items-center justify-center md:flex-row"
+      >
+        <div
+          class="bg-pink flex flex-col w-[200px] lg:w-[300px] lg:h-[475px] h-[375px] text-center px-2 rounded-lg"
+        >
+          <h6 class="font-bold text-lg my-1">SCARLETT</h6>
+          <img
+            class="w-[160px] lg:w-[200px] lg:ml-10 ml-4 my-2"
+            src="img/scarlett.png"
+          />
+          <p class="text-sm lg:text-lg text-justify">
+            Scarlett Whitening sudah terdaftar di BPOM, Halal, Bebas Mercury &
+            Hydroquinone. Rawat kulit cantikmu tidak perlu ragu lagi! 100%
+            Produk Asli. Belanja Sekarang!
+          </p>
+          <h6 class="justify-end ml-auto text-black underline">More</h6>
+        </div>
+        <div
+          class="bg-pink flex flex-col w-[200px] h-[375px] lg:w-[300px] lg:h-[475px] text-center px-2 rounded-lg"
+        >
+          <h6 class="font-bold text-lg my-1">GOUN</h6>
+          <img
+            class="w-[160px] lg:w-[200px] lg:ml-10 ml-4 my-2"
+            src="img/goun.png"
+          />
+          <p class="text-sm lg:text-lg text-justify">
+            Dapatkan Harga Dress Dior Murah & Terbaru. Beli Dress Dior Aman &
+            Garansi Shopee. Bisa COD ✓ Promo & Diskon Terlengkap ✓ Cashback ✓
+            Gratis Ongkir
+          </p>
+          <h6 class="justify-end ml-auto text-black underline">More</h6>
+        </div>
+        <div
+          class="bg-pink flex flex-col w-[200px] h-[375px] lg:w-[300px] lg:h-[475px] text-center px-2 rounded-lg"
+        >
+          <h6 class="font-bold text-lg my-1">BAG</h6>
+          <img
+            class="w-[160px] lg:w-[200px] lg:ml-10 ml-4 my-2"
+            src="img/bag.png"
+          />
+          <p class="text-sm lg:text-lg text-justify">
+            Beli Tas Balenciaga Ori model & desain terbaru harga murah 2022 di
+            Tokopedia! ∙ Promo Pengguna Baru ∙ Kurir Instan ∙ Bebas Ongkir ∙
+            Cicilan 0%.
+          </p>
+          <h6 class="justify-end ml-auto text-black underline">More</h6>
+        </div>
+      </div>
+      <h1 class="text-4xl text-center font-bold my-8">MY STAR HERE!</h1>
+      <div class="flex flex-col md:flex-row md:mx-16">
+        <img
+          class="w-[85%] md:w-[450px] lg:w-[700px] mx-auto"
+          src="./img/travel.png"
+          alt="missing img"
+        />
+        <div>
+          <div class="mx-8 mt-16 md:mt-0 bg-birutua">
+            <div
+              class="bg-white w-[50%] md:w-[80%] lg:w-[50%] flex flex-row gap-4 p-2"
+            >
+              <img src="./img/location.png" alt="missing img" />
+              <h4>THE PLACE NAME</h4>
+            </div>
+            <div class="text-black bg-birutua p-2 lg:py-8">
+              <h6 class="text-lg">Wisata Paralayang Kota Batu</h6>
+              <a
+                class="underline"
+                href="https://maps.app.goo.gl/uSvUdUyCNTbv3wA17"
+                >https://maps.app.goo.gl/uSvUdUyCNTbv3wA17</a
+              >
+            </div>
+          </div>
+          <div class="mx-8 mt-8 bg-birutua">
+            <div
+              class="bg-white w-[50%] md:w-[80%] flex flex-row gap-4 p-2 lg:w-[50%]"
+            >
+              <img src="./img/star.png" alt="missing img" />
+              <h4>MY RATE</h4>
+            </div>
+            <div class="text-black bg-birutua p-2 lg:py-8">
+              <h6 class="text-lg">9/10</h6>
+            </div>
+          </div>
+          <div class="mx-8 mt-8 bg-birutua">
+            <div
+              class="bg-white w-[50%] md:w-[80%] flex flex-row gap-4 p-2 lg:w-[50%]"
+            >
+              <img src="./img/opinion.png" alt="missing img" />
+              <h4>MY OPINION</h4>
+            </div>
+            <div class="text-black bg-birutua p-2 lg:py-8">
+              <h6 class="text-justify">
+                Tempatnya sangat nyaman. Lingkungannya bersih. Harga tiker
+                afordable cuma 15.000 per orang. Kalau malam, melihat
+                pemandangan dari atas itu seperti melihat hamparan
+                bintang-bintang karena lampu-lampu rumah warga. Keren banget
+                deh. Recommended. Tapi disini sangat dingin, jadi harus pakai
+                jaket setebal mungkin
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="my-8 bg-birumuda2 mx-8 md:mx-32 p-4 rounded-xl gap-4 text-right"
+      >
+        <div class="justify-center flex flex-row gap-8">
+          <div class="font-bold flex flex-col md:flex-row md:gap-2 md:mt-4">
+            <h6>GIVE ME YOUR FEEDBACK</h6>
+            <h6>YEAHH ^_^</h6>
+          </div>
+          <div class="bg-[#236061] text-2xl p-2 rounded-xl text-white">
+            HERE
+          </div>
+        </div>
+      </div>
+      <footer class="bg-[#FFF5DD] mx-8">
+        <div class="flex flex-row flex-wrap justify-center gap-8">
+          <div class="bg-kuning flex flex-row h-1/2 py-2 px-4 gap-2 mt-4">
+            <img class="h-1/2" src="./img/instagram-black.png" alt="missing img">
+            <h6 class="mt-2 font-semibold">INSTAGRAM</h6>
+          </div>
+          <div class="bg-kuning flex flex-row h-1/2 py-3 px-4 gap-2 mt-4">
+            <img class="h-1/2" src="./img/youtube-black.png" alt="missing img">
+            <h6 class="mt-2 font-semibold">YOUTUBE</h6>
+          </div>
+          <div class="bg-kuning flex flex-row h-1/2 py-2 px-4 gap-2 mt-4">
+            <img class="h-1/2" src="./img/twitter-black.png" alt="missing img">
+            <h6 class="mt-2 font-semibold">TWITTER</h6>
+          </div>
+          <div class="bg-kuning flex flex-row h-1/2 py-2 px-4 gap-2 mt-4">
+            <img class="h-1/2" src="./img/linkedin-black.png" alt="missing img">
+            <h6 class="mt-2 font-semibold">LINKEDIN</h6>
+          </div>
+          <div class="bg-kuning flex flex-row h-1/2 py-2 px-4 gap-2 mt-4">
+            <img class="h-1/2" src="./img/snapchat-black.png" alt="missing img">
+            <h6 class="mt-2 font-semibold">SNAPCHAT</h6>
+          </div>
+        </div>
+        <div>
+          <p class="font-medium text-center mt-8 pb-16 ">© 2018 The Journey Of Alisti by Alifia Lintang Istiqomah | Creative Digital Marketing Agency Malang | All rights reserved.</p>
+        </div>
+      </footer>
+  </body>
+</html>
